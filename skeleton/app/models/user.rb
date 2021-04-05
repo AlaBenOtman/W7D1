@@ -1,8 +1,8 @@
-class UsersController < ApplicationRecord
+class User < ApplicationRecord
     
 validates :session_token, :username,  presence: true, uniqueness: true
 validates :password_digest, presence: true 
-validates :password, length: {minimum 6, allow_nill: true }
+validates :password, length: {minimum: 6, allow_nil: true }
 
 
 
