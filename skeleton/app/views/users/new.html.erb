@@ -1,0 +1,15 @@
+<h1>Sign Up</h1>
+
+<h2>Enter information into all fields.</h2>
+
+
+<form action="<%= users_url %>" method="post">
+
+<label for="username">Username</label>
+    <input type="text" id= "username" name= "user[username]" value= "<% @user.username%>">
+
+<label for="_password">Password</label>
+    <input type="password" id= "_password" name = "user[password]" value = "<%= @user.password %>">
+
+<input type="submit">
+</form>
