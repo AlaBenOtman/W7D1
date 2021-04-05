@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class UsersController < ApplicationRecord
     
 validates :session_token, :username,  presence: true, uniqueness: true
 validates :password_digest, presence: true 
